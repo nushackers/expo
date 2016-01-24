@@ -38,7 +38,7 @@ You can also use your own favico or Hackathon logo/header.
 
   <script id="template" type="x-tmpl-mustache">
     <div class="search_container">
-      <input class="search" type="search" placeholder="Filter by sponsor prize, project name, category or whatever" id="filter"/>
+      <input class="search" type="search" placeholder="Filter by sponsor prize, project name" id="filter"/>
     </div>
     <table id="expoTable">
       <thead>
@@ -46,7 +46,6 @@ You can also use your own favico or Hackathon logo/header.
           <th class="number">Table</th>
           <th class="name">Project</th>
           <th class="prize">Sponsor Prizes</th>
-          <th class="cat">Category</th> <!--You can comment out this column if you don't need it-->
         </tr>
       </thead>
       <tbody class="list">
@@ -56,7 +55,6 @@ You can also use your own favico or Hackathon logo/header.
             <td class="number">{{table}}</td>
             <td class="name"><a href="{{{link}}}" target="_blank">{{project}}</a></td>
             <td class="prize">{{sponsors}}</td>
-            <td class="cat">{{category}}</td> <!--You can comment out this column if you don't need it-->
           </tr>
         {{/data}}
       </tbody>
@@ -64,10 +62,6 @@ You can also use your own favico or Hackathon logo/header.
   </script>
   <br>
   <div id="footer">
-
-    <p>Sponsors, want analytics about who's using your API, what they're building, and where?</p>
-    <p>Organizers, want your own slick expo / table number app?</p>
-    <p>Email <a href="mailto:hackathons@devpost.com"> hackathons@devpost.com</a></p>
 
     <a href="http://devpost.com"><img src="http://devpost0.assetspost.com/assets/shared/devpost_logo-646bdf6ac6663230947a952f8d354cad.svg" style="height: 30px;"></a>
 
